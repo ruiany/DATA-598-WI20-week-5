@@ -20,6 +20,7 @@ knitr::opts_chunk$set(
 
 ```{r setup}
 library(mycompedium)
+library(tidyverse)
 ```
 
 ```{r my-fig, fig.cap="cat"}

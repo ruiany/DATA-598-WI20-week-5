@@ -1,5 +1,5 @@
 
-# mycompedium
+# Package mycompedium
 
 <!-- badges: start -->
 <!-- badges: end -->
