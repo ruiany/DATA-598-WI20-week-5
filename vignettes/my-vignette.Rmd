@@ -1,0 +1,42 @@
+---
+title: "my-vignette"
+output: 
+  bookdown::html_document2:
+    base_format: rmarkdown::html_vignette
+    fig_caption: true
+bibliography: mybib.bib
+vignette: >
+  %\VignetteIndexEntry{my-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(mycompedium)
+```
+
+```{r my-fig, fig.cap="cat"}
+
+knitr::include_graphics("figs/cat.png")
+
+```
+
+We can see a cat in Figure \@ref(fig:my-fig)
+
+```{r RunCodeChunkShowAll, echo=FALSE} 
+# Example of running external code using source
+source('my-external-code.R')
+```
+
+Look at [@leyhausen1979cat] to learn more abour cats. <br />
+Look at [@doherty2017global] to learn more about dogs. <br />
+[@gough2018breed] has lots of information about cats and dogs. 
+
+## References cited

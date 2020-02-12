@@ -1,13 +1,23 @@
 Package: mycompedium
 Type: Package
-Title: What the Package Does (Title Case)
+Title: DATA598A-2020WIN-test-package
 Version: 0.1.0
-Author@R: person("Ruian", "Yang",
-          email = "ruiany1522@gmail.com",
-          comment = c(ORCID = "0000-0002-0789-2465"))
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author@R: 
+  person(giver = "Ruian", family = "Yang",
+    email = "ruiany1522@gmail.com",
+    comment = c(ORCID = "0000-0002-0789-2465"))
+Maintainer: Ruian Yang <ruiany1522@gmail.com>
+Description: Week 5 in-class activity: building a package.
+Depends: R (>= 3.5)
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Imports: 
+    dplyr (>= 1.4.0),
+    ggplot2 (>= 3.1.0)
+Suggests: 
+    rmarkdown,
+    knitr,
+    hexbin
+VignetteBuilder: knitr
+RoxygenNote: 7.0.2
